@@ -1,7 +1,22 @@
+import bcrypt from 'bcryptjs';
+
 const data = {
+  users: [
+    {
+      name: 'Basir',
+      email: 'admin@example.com',
+      password: bcrypt.hashSync('1234', 8),
+      isAdmin: true,
+    },
+    {
+      name: 'John',
+      email: 'user@example.com',
+      password: bcrypt.hashSync('1234', 8),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
-      _id: '1',
       name: 'Hikari Marine S',
       category: 'Fish Food',
       image: '/images/Hikari-Marine-S_nbtgvq.webp',
@@ -13,7 +28,6 @@ const data = {
       description: 'high quality product',
     },
     {
-      _id: '2',
       name: 'Red Sea Coral Pro Salt',
       category: 'Marine Salt',
       image: '/images/Red-Sea-Coral-Pro_qsxodb.jpg',
@@ -25,7 +39,6 @@ const data = {
       description: 'high quality product',
     },
     {
-      _id: '3',
       name: 'Red Sea Salt',
       category: 'Marine Salt',
       image: '/images/Red-Sea-Salt_sbozdb.webp',
