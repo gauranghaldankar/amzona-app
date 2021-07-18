@@ -1,10 +1,7 @@
 html {
-  font-size: 62.5%; /* Default font size of the browser is 16 pixel. 
-    Multiply that by 62.5 - Result is 10px - equal to 1 rem */
-
+  font-size: 62.5%; /* 16px x 62.5 = 10px = 1rem */
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   height: 100vh;
@@ -13,7 +10,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 #root {
   height: 100%;
 }
@@ -29,20 +25,17 @@ body {
   grid-template-rows: 5rem 1fr 5rem;
   height: 100%;
 }
-
 header {
   grid-area: header;
   background-color: #203040;
 }
-
 main {
   grid-area: main;
   padding: 1rem;
 }
-
 footer {
   grid-area: footer;
-  background-color: #203020;
+  background-color: #203040;
   color: #ffffff;
 }
 /* Common */
@@ -54,14 +47,13 @@ h2 {
   font-size: 1.6rem;
   padding: 1rem 0;
 }
-a {
-  text-decoration: none; /* this will remove undeline from links */
-}
 
+a {
+  text-decoration: none;
+}
 a:hover {
   color: #ff8000;
 }
-
 ul {
   padding: 0;
   margin: 0;
@@ -70,7 +62,6 @@ ul {
 li {
   margin-top: 1rem;
 }
-
 button {
   padding: 1rem;
   border-radius: 0.5rem;
@@ -85,58 +76,49 @@ button {
 button:hover {
   border: 0.1rem #404040 solid;
 }
-
 button.primary {
   background-color: #f0c040;
 }
-
 button.block {
   width: 100%;
 }
-
 /* Header */
 header a {
   color: #ffffff;
   padding: 1rem;
 }
-
 a.brand {
   color: #ffffff;
   font-size: 3rem;
   font-weight: bold;
 }
-
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-
 .row.center {
   justify-content: center;
 }
-
 .row.top {
   align-items: flex-start;
 }
-
 .col-1 {
   flex: 1 1 25rem;
 }
 .col-2 {
   flex: 2 1 50rem;
 }
+
 /* Image */
 img {
   border-radius: 0.5rem;
 }
-
 img.medium {
   max-width: 29rem;
   width: 100%;
 }
-
 img.large {
   width: 100%;
 }
@@ -148,49 +130,40 @@ img.large {
   border-radius: 0.5rem;
   margin: 1rem;
 }
-
 .card-body {
   padding: 1rem;
 }
-
 .card-body > * {
   margin-bottom: 0.5rem;
 }
-
 .price {
   font-size: 2rem;
 }
-
 /* Rating */
 .rating span {
   color: #f0c040;
   margin: 0.1rem;
 }
-
 .rating span:last-child {
   color: #404040;
 }
-
 /* Alert */
 .success {
   color: #20a020;
 }
-.error {
+.danger {
   color: #a02020;
 }
-
 .alert {
   padding: 1rem;
   border: 0.1rem solid transparent;
   border-radius: 0.5rem;
 }
-
 .alert-info {
   color: #2020a0;
   background-color: #e0e0ff;
 }
-
 .alert-danger {
   color: #a02020;
-  background-color: #ffe0e0e0;
+  background-color: #ffe0e0;
 }
